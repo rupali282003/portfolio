@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="protfolio-container">
+    
+    <div class="left-container">
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100075400279278&_rdr">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <a href="https://wa.link/t22pna"><i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <i class="fa-brands fa-telegram"></i>
+        
+      </div>
+      <div class="content">
+        <p class="intro"> Hi! I AM <span>Rupali</span> </p>
+        <h1> Frontend Web Developer. </h1>
+        <p class="detail">I'm a frontend Web Developer lives in Ranchi. I make UI and UX designs usually with HTML, CSS and Javascript.
+        </p>
+        <div class="btn-container">
+          <button>Hire Me</button>
+          <a href="">
+          <button>view project</button>
+        </a>
+        </div>
+      
+      </div>
+
+    </div>
+
+    <div class="right-container">
+    <div class="design">
+      <div class="circle1"></div>
+      <div class="circle">
+        <img src="assets/image/3.jpg" alt="pic" class="pic1">
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const searchInput = document.querySelector(".search-input");
+    const searchIcon = document.querySelector(".search-icon");
+
+    // Toggle navigation menu visibility
+    menuToggle.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent click from bubbling up
+      navLinks.classList.toggle("show");
+    });
+
+    // Toggle search input visibility
+    searchIcon.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent click from bubbling up
+      searchInput.classList.toggle("show");
+    });
+
+    // Hide nav menu and search input when clicking outside
+    document.addEventListener("click", () => {
+      navLinks.classList.remove("show"); // Hide nav menu
+      searchInput.classList.remove("show"); // Hide search input
+    });
+
+    // Prevent hiding when clicking inside nav menu or search input
+    navLinks.addEventListener("click", (e) => e.stopPropagation());
+    searchInput.addEventListener("click", (e) => e.stopPropagation());
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,57 @@
+@media only screen and (max-width: 600px){
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.pic1{
+    width: 115px;
+    height: 117px;
+}
+.circle:nth-child(2) {
+    width: 131px;
+    height: 135px;
+    position: absolute;
+    top: 176px;
+    left: 174px
+}
+.content .detail {
+    font-size: 14px;
+}
+.content .intro {
+    font-size: 17px;
+}
+.content h1 {
+    font-size: 20px;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+     gap: 18px;
+    
+}
+.left-container {
+    width: 56%;
+}
+.content {
+   
+    position: absolute;
+    bottom: 135px;
+    right: 43px;
+}
+.right-container {
+    width: 45%;
+}
+button:nth-child(1){
+    width: 259px;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+    position: absolute;
+    bottom: 22px;
+}
+}
