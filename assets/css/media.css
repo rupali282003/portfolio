@@ -15,7 +15,8 @@
     height: 135px;
     position: absolute;
     top: 176px;
-    left: 174px
+    left: 174px;
+    justify-self: anchor-center;
 }
 .content .detail {
     font-size: 14px;
@@ -38,7 +39,7 @@
 .content {
    
     position: absolute;
-    bottom: 135px;
+    bottom: 87px;
     right: 43px;
 }
 .right-container {
@@ -53,5 +54,6 @@ button:nth-child(1){
     gap: 56px;
     position: absolute;
     bottom: 22px;
+
 }
 }
